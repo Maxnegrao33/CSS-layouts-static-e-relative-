@@ -1,0 +1,61 @@
+/*Page Layouts*/
+/*Tables
+Floats e Clear
+Frameworks e Grid System
+FlexBox
+Grid
+*/
+
+/*##Positions
+Controlar elemento, sua posição na página
+Alterar o fluxo normal dos elementos */
+
+O Fluxo normal dos elementos é um abaixo do outro
+(html)
+<div class="box1 box"> </div>
+<div class="box2 box"> </div>
+<div class="box3 box"> </div>
+*Se caso for "inline", irá ficar um ao lado do outro
+
+Name: position
+Value: static|relative|absolute|fixed
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.box1{
+    background-color:red;
+}
+.box2{
+    background-color:yellow;
+}
+.box3{
+    background-color:green;
+}
+
+*Static
+     O padrão "default" deles são static (sendo um abaixo do outro)
+
+* Relative
+    Aparentemente nada muda mas ficam disponíveis as opções: 
+    * top,
+    * right,
+    * bottom,
+    * left,
+    * z-index
+        
+    Exemplo: 
+        .box1{
+            background-color:red;
+            position: relative;
+            left: 100px;
+            /*O objeto se afasta 100px da margem esquerda.*/
+            top: 80px 
+            /*O objeto mantém a posição anterior, apenas abaixando 80px do nível superior*/
+        }
+
+
+
